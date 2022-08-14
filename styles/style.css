@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply m-0 bg-bg p-0 text-primary;
+  font-family: TimesNewRoman, "Times New Roman", Times;
+}
+
+a {
+  @apply text-primary;
+}
