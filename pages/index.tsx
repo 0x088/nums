@@ -21,6 +21,10 @@ const Main: React.FC = () => {
       title: "Contract",
       url: info.contract,
     },
+    {
+      title: "Github",
+      url: info.github,
+    },
   ];
 
   return (

@@ -11,4 +11,5 @@ export const info = {
   openSeaCollection: "https://opensea.io/collection/unique-nums",
   contract: `https://etherscan.io/address/${contractAddress}#contracts`,
   twitter: "https://twitter.com/0x088",
+  github: "https://github.com/0x088/nums",
 };
