@@ -8,9 +8,7 @@ const MintWithNoSSR = dynamic(() => import("@/components/Mint"), {
 
 import { info } from "@/constants";
 
-const nums = [0, 1, 23, 56, 88];
-
-const Main: React.FC = () => {
+const Main: React.FC<{ nums: number[] }> = ({ nums }) => {
   const links: { title: string; url: string }[] = [
     { title: "OpenSea", url: info.openSeaCollection },
     {
@@ -54,5 +52,19 @@ const Main: React.FC = () => {
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const nums = new Array(100)
+    .fill(0)
+    .map((_el, idx) => idx)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 5);
+
+  return {
+    props: {
+      nums,
+    },
+  };
+}
 
 export default Main;

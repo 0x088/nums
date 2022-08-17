@@ -6,7 +6,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>NUMS - {info.description}</title>
           <link rel="icon" type="image/png" href={`./favicon.png`} />
           <meta name="robots" content="follow, index" />
           <meta content={info.description} name="description" />
