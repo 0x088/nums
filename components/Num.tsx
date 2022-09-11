@@ -6,7 +6,7 @@ type Props = { id: number; className?: string };
 const Num: React.FC<Props> = ({ id, className }) => {
   return (
     <a
-      href={`${info.openSeaPrefix}/${id}`}
+      href={`${info.looksRarePrefix}/${id}`}
       target="_blank"
       rel="noopener noreferrer"
       className={[

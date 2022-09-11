@@ -10,7 +10,7 @@ import { info } from "@/constants";
 
 const Main: React.FC<{ nums: number[] }> = ({ nums }) => {
   const links: { title: string; url: string }[] = [
-    { title: "OpenSea", url: info.openSeaCollection },
+    { title: "LooksRare", url: info.looksRarePrefix },
     {
       title: "Twitter",
       url: info.twitter,
